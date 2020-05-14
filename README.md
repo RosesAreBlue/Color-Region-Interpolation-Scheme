@@ -26,4 +26,28 @@ Next, we flood fill outwards from the boundary of each color region making a mar
 Eventually, the distances from blue, and the distances from red overlap and we store their ratio.
 ![Untitled4](https://user-images.githubusercontent.com/33347703/81981893-d6832a80-9628-11ea-921b-a68836213acd.png)
 
-Next,
+Next, we now know that the pixel near the centre is "5-away" from the red border and "6-away" from the blue border.
+Therefore, we need to pick a color such that the closer border has more influence.
+
+To do this:
+```
+Let the left part of the ratio represent red influence, and right, blue inluence.
+We want a weighted average of both channels such that red has more influence.
+So take the ratio        
+5:6
+We want more red influence, so take the inverse of both sides
+1/5 : 1/6     (Note the left side is now bigger than the right)
+Finally, make the ratios add up to 1 so that we may use it in a weighted average.
+1/5 + 1/6 = 11/30
+So,
+1/5 ÷ 11/30 : 1/6 ÷ 11/30
+6/11 : 5/11
+Hence, we have our weighted average.
+```
+
+We now do ``6/11*RedChannel + 5/11*BlueChannel`` to produce the new color below.
+
+![FinalUntitled](https://user-images.githubusercontent.com/33347703/81982529-e3ece480-9629-11ea-9ef8-c7397939b114.png)
+
+This is then repeated for every pixel until you get something like this,
+
