@@ -18,3 +18,12 @@ https://www.geogebra.org/m/fvs6uvft
 First, I collect all pixels of the same (or similar enough) color in a lookup table.
 Next, I treat each pixel as a "source" where color can flood out from.
 
+![Untitled](https://user-images.githubusercontent.com/33347703/81981891-d6832a80-9628-11ea-9ca1-ec021496d0d9.png)
+
+Next, we flood fill outwards from the boundary of each color region making a mark of the iterations it took to get to each pixel. We treat the iteration count as pseudo-distance from the boundary. https://en.wikipedia.org/wiki/Flood_fill
+![Untitled3](https://user-images.githubusercontent.com/33347703/81981886-d551fd80-9628-11ea-9255-301b98d53092.png)
+
+Eventually, the distances from blue, and the distances from red overlap and we store their ratio.
+![Untitled4](https://user-images.githubusercontent.com/33347703/81981893-d6832a80-9628-11ea-921b-a68836213acd.png)
+
+Next,
