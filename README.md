@@ -10,3 +10,5 @@ Some results:
 
 (One other cool application of inverse distance weighting; easy terrain generation)
 ![ezgif-2-7c0151ae7ee8](https://user-images.githubusercontent.com/33347703/81977449-f2370280-9621-11ea-9f30-211ce75c7e14.gif)
+https://www.geogebra.org/m/fvs6uvft
+
