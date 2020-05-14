@@ -1,7 +1,6 @@
 # Color-Region-Interpolation-Scheme
 The original problem I came up against was trying to interpolate smoothly between different color regions on an image efficiently.
 This was my original solution. Here I apply inverse distance weighting in a discrete setting.
-
 Some results:
 
 ![RobloxStudioBeta_2020-05-14_20-15-22](https://user-images.githubusercontent.com/33347703/81976505-8ef8a080-9620-11ea-9aa4-99eb44a16deb.png)
