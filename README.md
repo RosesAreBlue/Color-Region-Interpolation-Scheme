@@ -51,3 +51,4 @@ We now do ``6/11*RedChannel + 5/11*BlueChannel`` to produce the new color below.
 
 This is then repeated for every pixel until you get something like this,
 
+![Results](https://user-images.githubusercontent.com/33347703/81984570-e13fbe80-962c-11ea-94ac-0f1adc225171.png)
