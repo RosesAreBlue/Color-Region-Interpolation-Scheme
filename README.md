@@ -2,6 +2,7 @@
 Application of inverse distance weighting in a discrete setting.
 
 The original problem I came up against was trying to interpolate smoothly between different color regions on an image efficiently.
+This was my original solution.
 
 Some results:
 
@@ -11,4 +12,9 @@ Some results:
 (One other cool application of the same method: easy terrain generation.)
 ![ezgif-2-7c0151ae7ee8](https://user-images.githubusercontent.com/33347703/81977449-f2370280-9621-11ea-9f30-211ce75c7e14.gif)
 https://www.geogebra.org/m/fvs6uvft
+
+# The Algorithm
+
+First, I collect all pixels of the same (or similar enough) color in a lookup table.
+Next, I treat each pixel as a "source" where color can flood out from.
 
