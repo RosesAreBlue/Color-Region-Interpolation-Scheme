@@ -49,8 +49,8 @@ We now do ``6/11*RedChannel + 5/11*BlueChannel`` to produce the new color below.
 
 ![FinalUntitled](https://user-images.githubusercontent.com/33347703/81982529-e3ece480-9629-11ea-9ef8-c7397939b114.png)
 
-Here, I later discovered this simple idea of "inverse-distance-ratios" was part of a much larger interpolation scheme known as https://en.wikipedia.org/wiki/Inverse_distance_weighting and I've since applied it in other places.
-
 This is then repeated for every pixel until you get something like this,
 
 ![Results](https://user-images.githubusercontent.com/33347703/81984570-e13fbe80-962c-11ea-94ac-0f1adc225171.png)
+
+Here, I later discovered this simple idea of "inverse-distance-ratios" was part of a much larger interpolation scheme known as https://en.wikipedia.org/wiki/Inverse_distance_weighting and I've since applied it in other places.
